@@ -1,27 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c"
-      rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="apple-touch-icon" href="/images/bedrock_icon_192.png" sizes="180x180" />
-    <meta name="theme-color" content="#232F3E" />
-    <meta name="robots" content="noindex,nofollow">
-  </head>
-  <body class="min-h-dvh font-body">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx" onerror="window.location.reload(true)"></script>
-    <!-- Vite＋AmplifyUIの際は以下の設定が必要 -->
-    <script>
-      window.global = window;
-      window.process = {
-        env: { DEBUG: undefined },
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <!-- Favicon and Apple Touch Icon -->
+    <link rel="icon" href="/images/favicon.png" sizes="32x32" type="image/png">
+   
+    <link rel="apple-touch-icon" href="/images/Pulse_icon_180.png" sizes="180x180" />
+
+    
+    <!-- Inline CSS for styling response text -->
+    <style>
+      /* Styling for response text: No indentation, font-size of 10px */
+      .response-text {
+        padding-left: 0;    /* Remove any left padding */
+        margin-left: 0;     /* Remove any left margin */
+        text-indent: 0;     /* Remove text indentation */
+        font-size: 10px;    /* Set font size to 10px */
+        line-height: 1.4;   /* Adjust line height for readability */
+        color: #333;        /* Dark text color */
       }
-      var exports = {};
-    </script>
+    </style>
+  </head>
+  
+  <body>
+    <div id="root"></div>
+
+    <!-- Example of using response text styling -->
+    <div class="response-text">
+      This is a chat response text with no indentation and a font size of 10px. The text will render with a clean, consistent look.
+    </div>
+
+    <!-- Main application script -->
+    <script type="module" src="/src/main.tsx"></script>
   </body>
-</html>
